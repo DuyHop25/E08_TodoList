@@ -45,4 +45,10 @@ for (let i = 0; i < close.length; i++) {
   };
 }
 
-
+// Thêm ký hiệu "đã kiểm tra" khi nhấp vào một mục trong danh sách
+let items = document.getElementsByTagName("li");
+for (item of items) {
+  item.addEventListener("click", function () {
+    this.classList.toggle("checked");
+  });
+}
